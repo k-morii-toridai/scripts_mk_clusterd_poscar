@@ -1,0 +1,1 @@
+cif2cell 1000033.cif -p vasp --vasp-format=5
