@@ -70,7 +70,7 @@ def get_all_non_clusterd_atom(df_nnlist=df_nnlist, df_coords=df_coords):
     all_central_atom_set = set(df_coords['central atom'].tolist())
     
     # クラスタ(原子団)に属さない原子のid(central atomの値)を取得
-    diff_central_atom_list = list(all_central_atom_set.difference(cluster_all_atom_set))
+    all_non_clusterd_atom_list = list(all_central_atom_set.difference(cluster_all_atom_set))
     
     return all_non_clusterd_atom_list
 
